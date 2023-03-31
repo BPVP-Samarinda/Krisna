@@ -29,8 +29,8 @@ class CustomerResource extends Resource
                 Forms\Components\DatePicker::make('tanggal_lahir'),
                 Forms\Components\Radio::make('jenis_kelamin')
                 ->options([
-                    'Perempuan' => 'P',
-                    'Laki - Laki' => 'L',
+                    'Perempuan' => 'Perempuan',
+                    'Laki - Laki' => 'Laki - Laki',
                 ]),
 
                 Forms\Components\TextInput::make('telpon'),

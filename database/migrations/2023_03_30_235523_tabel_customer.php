@@ -12,15 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         //
-        Schema::create('customer', function ($table) {
+        Schema::create('customer',function ($table){
             $table->id();
             $table->string('nama')->nullable();
-            $table->text('jk')->nullable();
             $table->text('alamat')->nullable();
-            $table->double('agama')->default(0);
-            $table->integer('status')->default(0);
+            $table->date('tanggal_lahir')->defautlt(0);
+            $table->string('jenis_kelamin')->nullable();
+            $table->double('telpon')->nullable();
+            $table->srting('status')->nullable();
             $table->timestamps();
-        });
+
+         });
     }
 
     /**
